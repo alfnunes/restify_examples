@@ -1,0 +1,10 @@
+npm-debug.log*
+
+node_modules/
+
+.DS/
+.vs/
+.vscode/
+.idea/
+debug.log
+*.log

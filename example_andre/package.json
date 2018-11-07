@@ -1,0 +1,25 @@
+{
+  "name": "test_andre",
+  "version": "1.0.0",
+  "engines" : { "node" : ">=10.13.0" },  
+  "engineStrict" : true,
+  "description": "Projeto teste node do andré",
+  "main": "./src/server.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "npm run build && nodemon dist/server.js",
+    "serve": "npm run build && node dist/server.js",
+    "test": "npm run build && mocha --require babel-register"
+  },
+  "author": "André Nunes",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.18.5",
+    "restify": "^7.2.2",
+    "restify-router": "^0.5.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
